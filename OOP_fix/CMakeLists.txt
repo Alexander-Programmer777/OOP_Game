@@ -1,0 +1,66 @@
+cmake_minimum_required(VERSION 4.0)
+project(OOP)
+
+set(CMAKE_CXX_STANDARD 14
+    CMAKE_CXX_FLAGS "-Wall -Wextra -pedantic"
+)
+
+add_executable(OOP
+        main.cpp
+        entity.cpp
+        entity.h
+        player.cpp
+        player.h
+        enemy.cpp
+        enemy.h
+        cell.cpp
+        cell.h
+        field.cpp
+        field.h
+        enemy_spawner.cpp
+        enemy_spawner.h
+        position.cpp
+        position.h
+        game.cpp
+        game.h
+        i_spell.cpp
+        i_spell.h
+        player_hand.cpp
+        player_hand.h
+        direct_damage_spell.cpp
+        direct_damage_spell.h
+        area_damage_spell.cpp
+        area_damage_spell.h
+        trap_spell.cpp
+        trap_spell.h
+        enemy_tower.cpp
+        enemy_tower.h
+        game_state.cpp
+        game_state.h
+        save_load_system.cpp
+        save_load_system.h
+        level_system.cpp
+        level_system.h
+        console_input_processor.cpp
+        console_input_processor.h
+        game_controller.h
+        console_renderer.cpp
+        console_renderer.h
+        game_visualizer.h
+        commands/base_command.cpp
+        commands/base_command.h
+        commands/wasd_cmd.cpp
+        commands/wasd_cmd.h
+        commands/f_cmd.cpp
+        commands/f_cmd.h
+        commands/e_cmd.cpp
+        commands/load_cmd.cpp
+        commands/load_cmd.h
+        commands/save_cmd.cpp
+        commands/save_cmd.h
+        commands/cast_spell_cmd.cpp
+        commands/cast_spell_cmd.h
+        commands/quit_cmd.cpp
+        commands/quit_cmd.h
+        commands/e_cmd.h
+)
